@@ -11,17 +11,20 @@ class App extends React.Component{
             position => this.setState({ lat: position.coords.latitude }),
             err => this.setState({ errorMessage: err.message })
         )
-    } 
+    }
 
-    render() {
+    renderContent() {
         if (this.state.errorMessage && !this.state.lat) {
             return <div>Error: {this.state.errorMessage}</div>;
         }
         if (!this.state.errorMessage && this.state.lat) {
             return <SeasonDisplay lat={this.state.lat}/>
-        } else {
-            return <div>Loading...</div>
         }
+        return <div>Loading...</div>;
+    }
+
+    render() {
+        return <div>{this.renderContent()}</div>;
     }
 };
 
