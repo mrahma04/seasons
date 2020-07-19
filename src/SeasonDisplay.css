@@ -15,16 +15,16 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-
-  font-size: 64px;
 }
 
 .summer {
   background-color: orange;
+  font-size: 64px;
 }
 
 .winter {
   background-color: aliceblue;
+  font-size: 64px;
 }
 
 .season-display.summer i {
