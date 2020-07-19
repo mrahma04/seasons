@@ -19,12 +19,12 @@
 
 .summer {
   background-color: orange;
-  font-size: 64px;
+  font-size: 48px;
 }
 
 .winter {
   background-color: aliceblue;
-  font-size: 64px;
+  font-size: 48px;
 }
 
 .season-display.summer i {
